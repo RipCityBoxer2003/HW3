@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<!-- AUTHOR: SANTIAGO P. FRANCO -->
+<!-- # = HTML JQuery, . = CSS JQuery -->
+<head>
+<!-- Link to CSS File -->
+<link rel="stylesheet" href="stylesheets/style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascripts/cheesecakeForm.js"></script>
+<script src="javascripts/monthChanger.js"></script>
+
+</head>
+<body>
+
+<h1 style="font-size: 36px;">Cheesecake Order Form</h1>
+
+<!-- Link to image of Cheesecake -->
+<img src="https://justdoughit.com/wp-content/uploads/IMG_4813-1-1080x1080.jpg" alt="Girl in a jacket" width="250" height="250">
+
+<p id="nameChange">Quantity Topping</p>
+<div id="outer">
+
+<!-- Rows and Columns used to put the "selected" and radio buttons side by side -->
+
+  <div class="row">
+    <div class="column">
+      <select name="numOfCakes" id="numOfCake">
+    	  <option value="1" selected="selected">1</option>
+  	  <option value="2">2</option>
+	  <option value="3">3</option>
+      </select>
+    </div>
+    <div class="column">
+  	<input type="radio" id="Flavor1" name="Flavors" value="Plain">
+  	<label for="plain">Plain</label><br>
+ 	<input type="radio" id="Flavor2" name="Flavors" value="Cherry">
+  	<label for="cherry">Cherry</label><br>
+        <input type="radio" id="Flavor3" name="Flavors" value="Chocolate">
+        <label for="chocolate">Chocolate</label>
+    </div>
+  </div>
+
+
+<!-- The textbox and submit button with the Placeholder text -->
+  <p><label for="Notes">Notes:</label></p>
+  <textarea id="specialInstructions" name="S.I." placeholder="Enter any special instructions here." rows="5" cols="50"></textarea>
+  
+  <br>
+
+  <button id="submitBtn">Order</button>
+
+</div> <!-- close of outer div -->
+
+
+<h1 id="Order-Text" style="font-size: 36px;">Order for </h1>
+
+<div class="dropdown">
+  <button class="dropbtn">Jan</button>
+
+  <select class="dropdown-content" name="cars" size="3">
+    <option value="Jan" id ="Jan">Jan</option>
+    <option value="Feb" id ="Feb">Feb</option>
+    <option value="Mar" id ="Mar">Mar</option>
+    <option value="Apr" id ="Apr">Apr</option>
+    <option value="May" id ="May">May</option>
+    <option value="Jun" id ="Jun">Jun</option>
+    <option value="Jul" id ="Jul">Jul</option>
+    <option value="Aug" id ="Aug">Aug</option>
+    <option value="Sep" id ="Sep">Sep</option>
+    <option value="Oct" id ="Oct">Oct</option>
+    <option value="Nov" id ="Nov">Nov</option>
+    <option value="Dec" id ="Dec">Dec</option>
+  </select>
+
+</div>
+
+  
+
+
+
+<!-- Bulletpoints -->
+<ul id ="borderOrder">
+  <li class="order">11 Cherry</li>
+  <li class="order">17 Chocolate</li>
+  <li class="order">31 Plain</li>
+</ul>
+
+</body>
+</html>
