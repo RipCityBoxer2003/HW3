@@ -1,4 +1,5 @@
-$(document).ready(function()
+//Author: Santiago Franco
+$(document).ready(function ()
 {
 
 $("#Jan").click(function(){

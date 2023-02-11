@@ -1,4 +1,4 @@
-
+//Author: Santiago Franco
 $(document).ready(function()
 {
   var quantity = 1;
